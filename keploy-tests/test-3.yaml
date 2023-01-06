@@ -1,0 +1,28 @@
+version: api.keploy.io/v1beta1
+kind: Http
+name: test-3
+spec:
+    metadata: {}
+    req:
+        method: GET
+        proto_major: 1
+        proto_minor: 1
+        url: /books
+        header:
+            Accept: '*/*'
+            User-Agent: curl/7.81.0
+        body: ""
+    resp:
+        status_code: 200
+        header:
+            Content-Type: application/json; charset=utf-8
+        body: '[{"id":1,"title":"The Alchemist","author":"Paulo Coelho","quantity":10},{"id":2,"title":"The Monk Who Sold His Ferrari","author":"Robin Sharma","quantity":5},{"id":3,"title":"The Power of Your Subconscious Mind","author":"Joseph Murphy","quantity":7}]'
+        status_message: ""
+        proto_major: 1
+        proto_minor: 1
+    objects:
+        - type: error
+          data: H4sIAAAAAAAA/wEAAP//AAAAAAAAAAA=
+    assertions:
+        noise: []
+    created: 1672998845
